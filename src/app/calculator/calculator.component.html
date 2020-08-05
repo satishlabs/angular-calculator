@@ -1,0 +1,18 @@
+<div class="card container">
+    <div class="card-header text-center">CALCULATOR</div>
+    <div class="card-body">
+        <div class="form-group d-flex flex-grow">
+            <input [(ngModel)]="num1" type="number" value="num1" class="form-control">
+            <input [(ngModel)]="num2" type="number" value="num2" class="form-control">
+        </div>
+        <div class="d-flex flex-grow justify-content-between">
+            <button class="btn btn-success" (click)="add()"> SUM </button>
+            <button class="btn btn-primary" (click)="subtract()"> SUB </button>
+            <button class="btn btn-danger" (click)="multiply()"> MUL </button>
+            <button class="btn btn-warning" (click)="divide()"> DIV </button>
+        </div>
+    </div>
+    <div class="card-footer">
+        <h4>the result of {{num1}} and {{num2}} is: {{result}}.</h4>
+    </div>
+</div>
